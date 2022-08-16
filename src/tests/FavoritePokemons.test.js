@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import FavoritesPokemons from '../pages/FavoritePokemons';
 
-describe('Testes na pagina About', () => {
+describe('Testes na página FavoritePokemons', () => {
   test('Testa se mensagem é exibida, caso a pessoa não tenha pokémons favoritos', () => {
     render(<FavoritesPokemons />);
     const notFoundMensage = screen.getByText(/No favorite pokemon found/i);
